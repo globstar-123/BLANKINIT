@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Page Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor-panel">
+            <h1>Blank Page Maker</h1>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="bgColor">Background Color:</label>
+                    <input type="color" id="bgColor" value="#ffffff">
+                </div>
+
+                <div class="control-group">
+                    <label for="textColor">Text Color:</label>
+                    <input type="color" id="textColor" value="#000000">
+                </div>
+
+                <div class="control-group">
+                    <label for="fontSize">Font Size (px):</label>
+                    <input type="number" id="fontSize" value="16" min="8" max="72">
+                </div>
+
+                <div class="control-group">
+                    <label for="pageTitle">Page Title:</label>
+                    <input type="text" id="pageTitle" placeholder="Enter page title" value="My Blank Page">
+                </div>
+
+                <div class="control-group">
+                    <label for="pageContent">Page Content:</label>
+                    <textarea id="pageContent" placeholder="Enter your content here..."></textarea>
+                </div>
+
+                <div class="control-group">
+                    <label for="fontFamily">Font Family:</label>
+                    <select id="fontFamily">
+                        <option value="Arial">Arial</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button id="fullscreenBtn" class="btn btn-primary">View Fullscreen</button>
+                    <button id="resetBtn" class="btn btn-secondary">Reset</button>
+                    <button id="downloadBtn" class="btn btn-tertiary">Download HTML</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-panel">
+            <h2>Preview</h2>
+            <div id="preview" class="preview-content">
+                <h1 id="previewTitle">My Blank Page</h1>
+                <p id="previewContent">Your content will appear here...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
